@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #233d4dff;
+    --accent-color: #fe7f2dff;
+    --error-color: #fcca46ff;
+    --background-color: #a1c181ff;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -45,3 +52,12 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Body font */
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif; /* Headings font */
+}
+
