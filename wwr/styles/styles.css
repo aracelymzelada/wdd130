@@ -29,10 +29,23 @@ header {
     padding: 20px;
 }
 
+/* === Header Grid and Flex Nav === */
 .header-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    gap: 20px;
+}
+
+.header-container nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-container nav li {
+    margin-left: 20px;
 }
 
 nav a {
@@ -88,16 +101,55 @@ nav, p, section, article {
     margin-left: 10px;
 }
 
-.socialmedia {
+/* === Adventure Section Layout === */
+.adventures {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px;
+    gap: 10px;
 }
 
+.adventures figure {
+    flex: 1 1 calc(20% - 10px);
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.adventures figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* === Footer Styling === */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px; 
+    font-size: 0.9em;
+    
+    /* New Flex Layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* === Social Media === */
 .socialmedia {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 15px; 
     padding: 10px 0;
 }
@@ -109,16 +161,4 @@ nav, p, section, article {
 
 .socialmedia a:hover img {
     transform: scale(1.1); 
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 15px; 
-    font-size: 0.9em;
-}
-
-footer p {
-    margin-bottom: 10px;
 }
