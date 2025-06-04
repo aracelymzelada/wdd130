@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #233d4dff;
-    --secondary-color: #fe7f2dff;
-    --accent1-color: #fcca46ff;
-    --accent2-color: #a1c181ff;
-    --heading-font: "Roboto", sans-serif; 
-    --body-font: "Playfair Display", serif; 
+    --primary-color: #233d4d;
+    --secondary-color: #fe7f2d;
+    --accent1-color: #fcca46;
+    --accent2-color: #a1c181;
+    --heading-font: "Roboto", "sans-serif"; 
+    --body-font: "Playfair Display", "sans-serif"; 
 }
 
 * {
@@ -147,7 +147,7 @@ nav, p, section, article {
 .adventures figcaption {
     margin-top: 8px;
     font-weight: bold;
-    color: var;
+    color: #555;
 }
 
 /* === Footer Styling === */
@@ -170,7 +170,7 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var;
+    background-color: #233d4d;
     color: white;
     padding: 15px 20px;
     margin-top: 30px;
